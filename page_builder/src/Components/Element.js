@@ -20,9 +20,9 @@ const Element = ({ element, isSelected, setSelectedElement, modalVisible}) => {
 
       {!modalVisible &&
         <>
-          {element.type === 'label' && <label tabIndex={0} id='label1' draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight+'px' }} >{element.text}</label>}
-          {element.type === 'input' && <input draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight+'px' }} />}
-          {element.type === 'button' && <button draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight+'px' }} >Button</button>}
+          {element.type === 'label' && <label tabIndex={0} id='label1' draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight }} >{element.text}</label>}
+          {element.type === 'input' && <input draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight }} />}
+          {element.type === 'button' && <button draggable style={{ "left": element.x+'px', "top": element.y+'px', "fontSize": element.fontSize + 'px', "fontWeight": element.fontWeight }} >{element.text}</button>}
         </>}
     </div>
   );

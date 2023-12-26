@@ -14,7 +14,7 @@ function App() {
     y: 0,
     fontSize: 0,
     fontWeight: 0,
-    text: 'This is a Label'
+    text: ''
   });
 
   // Load elements from local storage on mount

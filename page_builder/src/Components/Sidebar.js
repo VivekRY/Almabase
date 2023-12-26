@@ -16,7 +16,7 @@ const Sidebar = ({ setOpenModal, setModalValues, setSelectedElement, handleExpor
       y: y,
       fontSize: '',
       fontWeight: '',
-      text: 'This is a label'
+      text: ''
     })
     setOpenModal(true)
   }
@@ -50,7 +50,7 @@ const Sidebar = ({ setOpenModal, setModalValues, setSelectedElement, handleExpor
       >
         Button
       </div>
-      <button style={{"marginTop": "28rem"}} onClick={handleExport}>Export</button>
+      <button onClick={handleExport}>Export</button>
     </div>
    
     </>

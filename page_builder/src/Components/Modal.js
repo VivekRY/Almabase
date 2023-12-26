@@ -1,6 +1,6 @@
 
 
-export default function OpenModal({ handleClose, modalValues, handleModalChange, handleModalSave, labelText, setLabelText }) {
+export default function OpenModal({ handleClose, modalValues, handleModalChange, handleModalSave }) {
     
     return (
         <div className="modal-container">
@@ -8,7 +8,7 @@ export default function OpenModal({ handleClose, modalValues, handleModalChange,
             <h3>Edit {modalValues.type==='label'?'Label':''}</h3>
             <span onClick={handleClose} style={{ "cursor": "pointer"}}>X</span>
             </div>
-            {modalValues.type === 'label' && <div>
+             <div>
                 <label>Text:</label>
                 <br />
                 <input
@@ -18,7 +18,7 @@ export default function OpenModal({ handleClose, modalValues, handleModalChange,
                     value={modalValues.text}
                     onChange={(e) => handleModalChange(e)}
                 />
-            </div>}
+            </div>
             <br />
             <div>
                 <label>X:</label>

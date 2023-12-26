@@ -27,8 +27,6 @@ const Page = ({ elements, addElement, selectedElement, setSelectedElement, updat
     }
   }
 
-
-
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -40,6 +38,7 @@ const Page = ({ elements, addElement, selectedElement, setSelectedElement, updat
       setOpenModal(false);
       setSelectedElement(null)
     }else{
+      console.log(modalValues)
       addElement(modalValues.type, modalValues.x, modalValues.y, modalValues.fontSize, modalValues.fontWeight, modalValues.text)
       setOpenModal(false)
     }
